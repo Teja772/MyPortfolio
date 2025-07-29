@@ -104,7 +104,7 @@
                 <div class="flex flex-col md:flex-row items-center gap-12 glass-effect p-8 rounded-lg">
                     <div class="md:w-2/3">
                         <p class="text-gray-400 mb-4">
-                            Hello! I'm Teja, a passionate developer from Hyderabad, India. My journey into technology began at Vignana Bharathi Institute of Technology, where I am pursued  B.Tech in Information Technology.
+                            Hello! I'm Teja, a passionate developer from Hyderabad, India. My journey into technology began at Vignana Bharathi Institute of Technology, where I am pursuing a B.Tech in Information Technology.
                         </p>
                         <p class="text-gray-400 mb-4">
                             I enjoy the challenge of solving complex problems and turning ideas into reality, whether it's through full-stack development or diving into the intricacies of machine learning. I have hands-on experience with Java, Python, and modern web technologies, and I'm always eager to learn and grow.
@@ -116,7 +116,7 @@
                     <div class="md:w-1/3">
                         <div class="relative group">
                             <div class="absolute -inset-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-                            <img src="https://placehold.co/400x400/0a192f/64ffda?text=TT" alt="TEJA TANKALA" class="relative rounded-lg shadow-2xl mx-auto w-full h-auto object-cover">
+                            <img src="teja-profile-photo.jpg" alt="TEJA TANKALA" class="relative rounded-lg shadow-2xl mx-auto w-full h-auto object-cover">
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                         <h3 class="font-bold text-lg">Java</h3>
                     </div>
                     <div class="skill-card glass-effect p-6 rounded-lg flex flex-col items-center justify-center">
-                        <i data-lucide="python" class="w-12 h-12 text-cyan-300 mb-3"></i>
+                        <i data-lucide="file-code" class="w-12 h-12 text-cyan-300 mb-3"></i>
                         <h3 class="font-bold text-lg">Python</h3>
                     </div>
                     <div class="skill-card glass-effect p-6 rounded-lg flex flex-col items-center justify-center">
@@ -245,8 +245,10 @@
     
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
+        // Wait for the DOM to be fully loaded before initializing icons
+        window.addEventListener('DOMContentLoaded', (event) => {
+            lucide.createIcons();
+        });
 
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
